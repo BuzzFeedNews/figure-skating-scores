@@ -109,6 +109,10 @@ That last step will clear all previously-extracted data, re-run the PDF-to-JSON 
 
 That process will overwrite the [`data/parsing-log.txt` file](data/parsing-log.txt), which contains a transcript of each page that has been parsed, and whether the parser found any score sheets on that particular page.
 
+## Licensing
+
+All code in this repository is available under the [MIT License](https://opensource.org/licenses/MIT). All data files are available under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0) license.
+
 ## Questions / Feedback
 
 Contact Jeremy Singer-Vine [jeremy.singer-vine@buzzfeed.com](mailto:jeremy.singer-vine@buzzfeed.com) and John Templon at [john.templon@buzzfeed.com](mailto:john.templon@buzzfeed.com).
