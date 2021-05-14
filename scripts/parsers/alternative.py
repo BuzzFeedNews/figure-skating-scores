@@ -1,5 +1,6 @@
 import pdfplumber
 import pandas as pd
+import numpy as np
 from .common import EmptyResultsException, dictify
 
 
@@ -77,8 +78,8 @@ def parse_elements(page, rect):
         "ref",
         "scores_of_panel"
     ])\
-        .replace("-", pd.np.nan)\
-        .replace("", pd.np.nan)
+        .replace("-", np.nan)\
+        .replace("", np.nan)
 
     if (len(df) == 2) and df["base_value"].astype(float).sum() == 0:
         return None
@@ -131,8 +132,8 @@ def parse_program_components(page, rect):
         "ref",
         "scores_of_panel"
     ])\
-        .replace("-", pd.np.nan)\
-        .replace("", pd.np.nan)
+        .replace("-", np.nan)\
+        .replace("", np.nan)
     
     total_score = df.iloc[:-1]\
         .pipe(lambda x: x["scores_of_panel"].astype(float) * x["factor"].astype(float)).sum()

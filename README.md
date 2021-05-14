@@ -102,7 +102,7 @@ If you'd like to re-run the data-extraction scripts yourself, do the following:
 - Navigate to the repository's root directory
 - Download the PDFs, per the instructions above
 - Ensure that you have [Python 3](https://www.python.org/downloads/) installed
-- Install the required libraries by running `pip install pandas; pip install -e git+https://github.com/jsvine/pdfplumber@v0.6.0-alpha#egg=pdfplumber`
+- Install the required libraries (ideally in a Python 3 virtual environment) by running `pip3 install pandas==1.2.4; pip3 install -e git+https://github.com/jsvine/pdfplumber@v0.6.0-alpha#egg=pdfplumber`
 - Run `make reproduce`
 
 That last step will clear all previously-extracted data, re-run the PDF-to-JSON and JSON-to-CSV extractions.

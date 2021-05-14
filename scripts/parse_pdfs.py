@@ -103,7 +103,7 @@ if __name__ == "__main__":
         if arg[-4:].lower() == ".pdf":
             paths = [ arg ]
         else:
-            paths = glob.glob(os.path.join(arg, "*.pdf"))
+            paths = sorted(glob.glob(os.path.join(arg, "*.pdf")))
 
         for i, path in enumerate(paths):
             fname = path.rsplit("/", 1)[-1]
